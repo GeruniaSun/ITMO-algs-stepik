@@ -28,13 +28,8 @@ class DisjointSet(size: Int, private val sizes: IntArray) {
 
         return max
     }
-
-    override fun toString(): String {
-        return "DisjointSet(parent=${parent.contentToString()}, rank=${rank.contentToString()}, max=$max)"
-    }
-
-
 }
+
 fun main() {
     val (n, m) = readln().split(" ").map { it.toInt() }
     val r = readln().split(" ").map { it.toInt() }.toIntArray()
